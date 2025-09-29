@@ -4,6 +4,8 @@
 
 import React from 'react'
 import ClientLanding from '../components/ClientLanding'
+// import Burden from '@/components/burden'
+import LoadBurdenButton from '@/components/LoadBurdenButton'
 
 export const metadata = {
   title: 'SafeHarbor — Конфиденциальный просмотр и защита данных',
@@ -64,6 +66,7 @@ export default function Page(){
 
         </div>
       </section>
+      <LoadBurdenButton />
     </main>
   )
 }
@@ -82,6 +85,8 @@ export default function Page(){
 import React, {useState, useEffect, useRef} from 'react'
 import { motion } from 'framer-motion'
 import { Lock, UserCheck, Globe, ShieldCheck } from 'lucide-react'
+import React, { useState } from 'react';
+import Burden from '@/components/burden';
 
 export default function ClientLanding(){
   const [info, setInfo] = useState(null)
